@@ -1,11 +1,25 @@
 // Write your function here
 function getAverageOfElementsAtProperty(objt, key){
-   if (typeof objt[key] == Array) {
-       for(let i=0; i<objt[key].length; i++ ){
-           return "hola"
-       }
-       
-   }
+    let Array1=obj.key;
+    let newArray=[];
+    let sum=0;
+    
+    if (Array1=='') {
+        return 0;
+    }else if(typeof(obj.key)!="object"){
+        return 0;
+    }else if (key=='') {
+        return 0;
+    }else{
+        for (let i = 0; i < Array1.length; i++) {
+          newArray.push(parseInt(Array1[i]));
+          sum=sum+newArray[i];
+        }
+      
+        return sum/Array1.length;
+    }
+    
+    
 }
 
 
